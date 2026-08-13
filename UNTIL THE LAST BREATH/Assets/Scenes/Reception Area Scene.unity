@@ -359,6 +359,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: e9220bf0-c0e1-48d3-b3a0-80d78d44d8dc
     m_ActionName: 'Player/Crouch[/Keyboard/ctrl]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 946159ea-5e5b-4b8e-bbe1-304c8519c1d0
+    m_ActionName: 'Player/Pick up[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -401,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5637f442752e1d74c93221ed279c7848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FPController
-  moveSpeed: 4
+  moveSpeed: 6
   gravity: -9.81
   cameraTransform: {fileID: 1780056410}
   lookSensitivity: 3

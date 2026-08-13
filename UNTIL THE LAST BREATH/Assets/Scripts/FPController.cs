@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class FPController : MonoBehaviour
 {
     [Header("Movement settings")]
-    public float moveSpeed = 4f;
+    public float moveSpeed = 6f;
     public float gravity = -9.81f;
 
     [Header("Look settings")]
