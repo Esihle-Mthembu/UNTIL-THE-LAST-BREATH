@@ -246,7 +246,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Keyboard"",
+                    ""groups"": "";Mouse;Keyboard"",
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -285,7 +285,13 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""devicePath"": ""<Keyboard>"",
                     ""isOptional"": false,
                     ""isOR"": false
-                },
+                }
+            ]
+        },
+        {
+            ""name"": ""Mouse"",
+            ""bindingGroup"": ""Mouse"",
+            ""devices"": [
                 {
                     ""devicePath"": ""<Mouse>"",
                     ""isOptional"": false,
@@ -517,6 +523,19 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         {
             if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
             return asset.controlSchemes[m_KeyboardSchemeIndex];
+        }
+    }
+    private int m_MouseSchemeIndex = -1;
+    /// <summary>
+    /// Provides access to the input control scheme.
+    /// </summary>
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme MouseScheme
+    {
+        get
+        {
+            if (m_MouseSchemeIndex == -1) m_MouseSchemeIndex = asset.FindControlSchemeIndex("Mouse");
+            return asset.controlSchemes[m_MouseSchemeIndex];
         }
     }
     /// <summary>

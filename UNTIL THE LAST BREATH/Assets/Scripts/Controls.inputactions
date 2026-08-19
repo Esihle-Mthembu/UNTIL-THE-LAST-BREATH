@@ -160,7 +160,7 @@
                     "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard",
+                    "groups": ";Mouse;Keyboard",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -199,7 +199,13 @@
                     "devicePath": "<Keyboard>",
                     "isOptional": false,
                     "isOR": false
-                },
+                }
+            ]
+        },
+        {
+            "name": "Mouse",
+            "bindingGroup": "Mouse",
+            "devices": [
                 {
                     "devicePath": "<Mouse>",
                     "isOptional": false,
