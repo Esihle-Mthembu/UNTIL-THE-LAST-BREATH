@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 256297135}
   - component: {fileID: 256297134}
   m_Layer: 5
-  m_Name: Help button
+  m_Name: Guide button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 729590219}
   - component: {fileID: 729590218}
   m_Layer: 5
-  m_Name: Help button text
+  m_Name: Guide button text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -940,7 +940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Help
+  m_text: Guide
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 890242916}
   - component: {fileID: 890242915}
   m_Layer: 5
-  m_Name: Start button text
+  m_Name: New Game button text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Game
+  m_text: New Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1440,7 +1440,7 @@ GameObject:
   - component: {fileID: 1542369449}
   - component: {fileID: 1542369448}
   m_Layer: 5
-  m_Name: Start button
+  m_Name: New Game button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
