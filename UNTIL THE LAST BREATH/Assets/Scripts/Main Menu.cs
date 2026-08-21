@@ -6,13 +6,14 @@ public class MainMenu : MonoBehaviour
     // New game button
     public void NewGame()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Gameplay Scene");
     }
 
     // Continue button
     public void ContinueGame()
     {
-
+        
     }
 
     // Exit button

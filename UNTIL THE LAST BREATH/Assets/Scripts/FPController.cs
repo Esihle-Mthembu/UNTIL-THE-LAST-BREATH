@@ -46,7 +46,8 @@ public class FPController : MonoBehaviour
         HandleLook();
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    //Movement
+    public void OnMovement(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
     }
@@ -69,7 +70,8 @@ public class FPController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
-
+    
+    //Look
     public void HandleLook()
     {
         float mouseX = lookInput.x * lookSensitivity;
