@@ -9,12 +9,13 @@ public class Ghost : MonoBehaviour
     public float detectionRange = 220f;   // how far away it starts chasing
 
     [Header("Movement")]
-    public float chaseSpeed = 10f;
+    public float chaseSpeed = 4f;
     public float turnSpeed = 5f;
+    public float stopDistance = 1.5f;
 
-    [Header("Floating bob")]
-    public float bobHeight = 0.2f;
-    public float bobSpeed = 1.5f;
+    [Header("Floating ghost")]
+    public float ghostHeight = 0.2f;
+    public float ghostSpeed = 1.5f;
 
     private float baseY;
 
@@ -31,7 +32,7 @@ public class Ghost : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("Ghost: No player assigned and no GameObject tagged player found.");
+                Debug.LogWarning("Ghost: No player assigned and no GameObject tagged 'Player' found.");
             }
         }
     }
@@ -47,7 +48,7 @@ public class Ghost : MonoBehaviour
 
         if (distanceToPlayer <= detectionRange)
         {
-            ChasePlayer();
+            ChasePlayer(distanceToPlayer);
         }
         else
         {
@@ -55,16 +56,25 @@ public class Ghost : MonoBehaviour
         }
     }
 
-    private void ChasePlayer()
+    private void ChasePlayer(float distanceToPlayer)
     {
         // Horizontal direction toward the player
         Vector3 direction = player.position - transform.position;
         direction.y = 0f;
         direction.Normalize();
 
-        Vector3 newPos = transform.position + direction * chaseSpeed * Time.deltaTime;
-        newPos.y = baseY + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
-        transform.position = newPos;
+        if (distanceToPlayer > stopDistance)
+        {
+            Vector3 newPos = transform.position + direction * chaseSpeed * Time.deltaTime;
+            newPos.y = baseY + Mathf.Sin(Time.time * ghostSpeed) * ghostHeight;
+            transform.position = newPos;
+        }
+        else
+        {
+            Vector3 pos = transform.position;
+            pos.y = baseY + Mathf.Sin(Time.time * ghostSpeed) * ghostHeight;
+            transform.position = pos;
+        }
 
         // Face the player
         if (direction.sqrMagnitude > 0.001f)
@@ -78,7 +88,7 @@ public class Ghost : MonoBehaviour
     {
         // Not chasing yet
         Vector3 pos = transform.position;
-        pos.y = baseY + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
+        pos.y = baseY + Mathf.Sin(Time.time * ghostSpeed) * ghostHeight;
         transform.position = pos;
     }
 }
