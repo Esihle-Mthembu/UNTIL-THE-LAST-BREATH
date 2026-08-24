@@ -24,7 +24,7 @@ public class FPController : MonoBehaviour
     public float crouchHeight = 1.5f;
 
     [Header("PickUp settings")]
-    public float pickupRange = 4f;
+    public float pickupRange = 10f;
     public Transform holdPos;
     public LayerMask pickupMask = ~0; // optional: restrict raycast to a "Pickup" layer
     private PickUp heldObject;
@@ -139,7 +139,10 @@ public class FPController : MonoBehaviour
     // Pick Up (E)
     public void OnPickUp(InputAction.CallbackContext context)
     {
-        if (!context.performed) return;
+        if (!context.performed)
+        {
+            return;
+        }
 
         if (heldObject == null)
         {
@@ -155,7 +158,15 @@ public class FPController : MonoBehaviour
                         pickUp.PickUpObject(holdPos, controller);
                         heldObject = pickUp;
                     }
+                    else
+                    {
+                        Debug.Log("Object has PickUp tag but no component");
+                    }
                 }
+            }
+            else
+            {
+                Debug.Log("Raycast hit nothing");
             }
         }
         else
