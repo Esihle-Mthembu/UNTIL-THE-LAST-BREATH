@@ -1,25 +1,23 @@
 using UnityEngine;
 
-public class GhostAI : MonoBehaviour
+public class Ghost : MonoBehaviour
 {
     [Header("References")]
-    [Tooltip("Leave empty to auto-find the GameObject tagged 'Player' at start.")]
     public Transform player;
 
     [Header("Detection")]
-    public float detectionRange = 10f;   // how far away it starts chasing
-    public float catchRange = 1f;      // how close counts as 'caught'
+    public float detectionRange = 220f;   // how far away it starts chasing
 
     [Header("Movement")]
-    public float chaseSpeed = 3f;
+    public float chaseSpeed = 4f;
     public float turnSpeed = 5f;
+    public float stopDistance = 1.5f;
 
-    [Header("Floating bob")]
-    public float bobHeight = 0.2f;
-    public float bobSpeed = 1.5f;
+    [Header("Floating ghost")]
+    public float ghostHeight = 0.2f;
+    public float ghostSpeed = 1.5f;
 
     private float baseY;
-    private bool hasCaughtPlayer = false;
 
     void Start()
     {
@@ -34,26 +32,23 @@ public class GhostAI : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("GhostAI: No player assigned and no GameObject tagged 'Player' found.");
+                Debug.LogWarning("Ghost: No player assigned and no GameObject tagged 'Player' found.");
             }
         }
     }
 
     void Update()
     {
-        if (player == null || hasCaughtPlayer) return;
-
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= catchRange)
+        if (player == null)
         {
-            CatchPlayer();
             return;
         }
 
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
         if (distanceToPlayer <= detectionRange)
         {
-            ChasePlayer();
+            ChasePlayer(distanceToPlayer);
         }
         else
         {
@@ -61,17 +56,25 @@ public class GhostAI : MonoBehaviour
         }
     }
 
-    private void ChasePlayer()
+    private void ChasePlayer(float distanceToPlayer)
     {
         // Horizontal direction toward the player
         Vector3 direction = player.position - transform.position;
         direction.y = 0f;
         direction.Normalize();
 
-        // Move directly via Transform -> no collider/CharacterController involved so walls never block it.
-        Vector3 newPos = transform.position + direction * chaseSpeed * Time.deltaTime;
-        newPos.y = baseY + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
-        transform.position = newPos;
+        if (distanceToPlayer > stopDistance)
+        {
+            Vector3 newPos = transform.position + direction * chaseSpeed * Time.deltaTime;
+            newPos.y = baseY + Mathf.Sin(Time.time * ghostSpeed) * ghostHeight;
+            transform.position = newPos;
+        }
+        else
+        {
+            Vector3 pos = transform.position;
+            pos.y = baseY + Mathf.Sin(Time.time * ghostSpeed) * ghostHeight;
+            transform.position = pos;
+        }
 
         // Face the player
         if (direction.sqrMagnitude > 0.001f)
@@ -85,13 +88,7 @@ public class GhostAI : MonoBehaviour
     {
         // Not chasing yet
         Vector3 pos = transform.position;
-        pos.y = baseY + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
+        pos.y = baseY + Mathf.Sin(Time.time * ghostSpeed) * ghostHeight;
         transform.position = pos;
-    }
-
-    private void CatchPlayer()
-    {
-        hasCaughtPlayer = true;
-        Debug.Log("Ghost has caught the player");
     }
 }
