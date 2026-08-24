@@ -24,8 +24,9 @@ public class FPController : MonoBehaviour
     public float crouchHeight = 1.5f;
 
     [Header("PickUp settings")]
-    public float pickupRange = 4f;
-    public Transform holdPoint;
+    public float pickupRange = 10f;
+    public Transform holdPos;
+    public LayerMask pickupMask = ~0; // optional: restrict raycast to a "Pickup" layer
     private PickUp heldObject;
 
     [Header("Throw Settings")]
@@ -47,7 +48,6 @@ public class FPController : MonoBehaviour
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         HandleMovement();
@@ -55,16 +55,14 @@ public class FPController : MonoBehaviour
 
         if (heldObject != null)
         {
-            heldObject.MoveToHoldPoint(holdPoint.position);
+            heldObject.MoveToHoldPoint(holdPos.position);
         }
     }
 
-    //Movement
+    // Movement
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-
-        Debug.Log("Movement: " + moveInput);
     }
 
     public void OnLook(InputAction.CallbackContext context)
@@ -78,7 +76,6 @@ public class FPController : MonoBehaviour
 
         float currentSpeed = isSprinting ? sprintSpeed : moveSpeed;
 
-        // Don't allow sprinting while crouching
         if (controller.height == crouchHeight)
         {
             currentSpeed = crouchSpeed;
@@ -95,37 +92,27 @@ public class FPController : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-    //Look
+    // Look
     public void HandleLook()
     {
         float mouseX = lookInput.x * lookSensitivity;
         float mouseY = lookInput.y * lookSensitivity;
 
         verticalRotation -= mouseY;
-
-        verticalRotation = Mathf.Clamp
-            (verticalRotation, -verticalLookLimit, verticalLookLimit);
+        verticalRotation = Mathf.Clamp(verticalRotation, -verticalLookLimit, verticalLookLimit);
 
         cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
-
         transform.Rotate(Vector3.up * mouseX);
     }
 
-    //Mechanics
-    //Sprint
+    // Sprint (Shift)
     public void OnSprint(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
-            isSprinting = true;
-        }
-        else if (context.canceled)
-        {
-            isSprinting = false;
-        }
+        if (context.performed) isSprinting = true;
+        else if (context.canceled) isSprinting = false;
     }
 
-    //Jump
+    // Jump (Spacebar)
     public void OnJump(InputAction.CallbackContext context)
     {
         if (context.performed && controller.isGrounded)
@@ -134,7 +121,7 @@ public class FPController : MonoBehaviour
         }
     }
 
-    //Crouch
+    // Crouch (C)
     public void OnCrouch(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -149,35 +136,8 @@ public class FPController : MonoBehaviour
         }
     }
 
-    // Pick Up
+    // Pick Up (E)
     public void OnPickUp(InputAction.CallbackContext context)
-    {
-        if (!context.performed) return;
-
-        if (heldObject == null)
-        {
-            Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
-
-            if (Physics.Raycast(ray, out RaycastHit hit, pickupRange))
-            {
-                PickUp pickUp = hit.collider.GetComponent<PickUp>();
-
-                if (pickUp != null)
-                {
-                    pickUp.PickUpObject(holdPoint);
-                    heldObject = pickUp;
-                }
-            }
-        }
-        else
-        {
-            heldObject.Drop();
-            heldObject = null;
-        }
-    }
-
-    //Throw
-    public void OnThrow(InputAction.CallbackContext context)
     {
         if (!context.performed)
         {
@@ -186,13 +146,46 @@ public class FPController : MonoBehaviour
 
         if (heldObject == null)
         {
-            return;
+            Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
+
+            if (Physics.Raycast(ray, out RaycastHit hit, pickupRange, pickupMask))
+            {
+                if (hit.collider.CompareTag("Pickup"))
+                {
+                    PickUp pickUp = hit.collider.GetComponent<PickUp>();
+                    if (pickUp != null)
+                    {
+                        pickUp.PickUpObject(holdPos, controller);
+                        heldObject = pickUp;
+                    }
+                    else
+                    {
+                        Debug.Log("Object has PickUp tag but no component");
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log("Raycast hit nothing");
+            }
         }
+        else
+        {
+            heldObject.Drop(controller);
+            heldObject = null;
+        }
+    }
+
+    // Throw (T)
+    public void OnThrow(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        if (heldObject == null) return;
 
         Vector3 dir = cameraTransform.forward;
         Vector3 impulse = dir * throwForce + Vector3.up * throwUpwardBoost;
 
-        heldObject.Throw(impulse);
+        heldObject.Throw(impulse, controller);
         heldObject = null;
     }
 }
