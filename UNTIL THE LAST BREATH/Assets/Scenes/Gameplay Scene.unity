@@ -373,6 +373,7 @@ GameObject:
   - component: {fileID: 333048929}
   - component: {fileID: 333048928}
   - component: {fileID: 333048927}
+  - component: {fileID: 333048931}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -395,7 +396,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -475,6 +476,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333048931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333048926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d0bfe159359f240a31844cdd9a7f50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostAI
+  player: {fileID: 1562219791}
+  detectionRange: 200
+  chaseSpeed: 10
+  turnSpeed: 5
+  bobHeight: 0.2
+  bobSpeed: 1.5
 --- !u!1 &591897537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,7 +2015,7 @@ MonoBehaviour:
   crouchSpeed: 3
   originalHeight: 3
   crouchHeight: 1.5
-  pickupRange: 4
+  pickupRange: 10
   holdPos: {fileID: 1802857290}
   pickupMask:
     serializedVersion: 2

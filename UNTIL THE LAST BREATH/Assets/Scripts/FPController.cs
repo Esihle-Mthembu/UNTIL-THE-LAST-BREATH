@@ -26,7 +26,7 @@ public class FPController : MonoBehaviour
     [Header("PickUp settings")]
     public float pickupRange = 10f;
     public Transform holdPos;
-    public LayerMask pickupMask = ~0; // optional: restrict raycast to a "Pickup" layer
+    public LayerMask pickupMask = ~0;
     private PickUp heldObject;
 
     [Header("Throw Settings")]

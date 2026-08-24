@@ -1,17 +1,15 @@
 using UnityEngine;
 
-public class GhostAI : MonoBehaviour
+public class Ghost : MonoBehaviour
 {
     [Header("References")]
-    [Tooltip("Leave empty to auto-find the GameObject tagged 'Player' at start.")]
     public Transform player;
 
     [Header("Detection")]
-    public float detectionRange = 10f;   // how far away it starts chasing
-    public float catchRange = 1f;      // how close counts as 'caught'
+    public float detectionRange = 220f;   // how far away it starts chasing
 
     [Header("Movement")]
-    public float chaseSpeed = 3f;
+    public float chaseSpeed = 10f;
     public float turnSpeed = 5f;
 
     [Header("Floating bob")]
@@ -19,7 +17,6 @@ public class GhostAI : MonoBehaviour
     public float bobSpeed = 1.5f;
 
     private float baseY;
-    private bool hasCaughtPlayer = false;
 
     void Start()
     {
@@ -34,22 +31,19 @@ public class GhostAI : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("GhostAI: No player assigned and no GameObject tagged 'Player' found.");
+                Debug.LogWarning("Ghost: No player assigned and no GameObject tagged player found.");
             }
         }
     }
 
     void Update()
     {
-        if (player == null || hasCaughtPlayer) return;
-
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= catchRange)
+        if (player == null)
         {
-            CatchPlayer();
             return;
         }
+
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         if (distanceToPlayer <= detectionRange)
         {
@@ -68,7 +62,6 @@ public class GhostAI : MonoBehaviour
         direction.y = 0f;
         direction.Normalize();
 
-        // Move directly via Transform -> no collider/CharacterController involved so walls never block it.
         Vector3 newPos = transform.position + direction * chaseSpeed * Time.deltaTime;
         newPos.y = baseY + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
         transform.position = newPos;
@@ -87,11 +80,5 @@ public class GhostAI : MonoBehaviour
         Vector3 pos = transform.position;
         pos.y = baseY + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
         transform.position = pos;
-    }
-
-    private void CatchPlayer()
-    {
-        hasCaughtPlayer = true;
-        Debug.Log("Ghost has caught the player");
     }
 }
