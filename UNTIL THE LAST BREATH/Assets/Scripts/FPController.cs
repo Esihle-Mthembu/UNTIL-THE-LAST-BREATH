@@ -41,7 +41,7 @@ public class FPController : MonoBehaviour
     }
 
     //Movement
-    public void OnMovement(InputAction.CallbackContext context)
+    public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
 
