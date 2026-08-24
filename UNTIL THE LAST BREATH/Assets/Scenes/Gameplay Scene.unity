@@ -1511,8 +1511,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4bedd86af92354885be30545e581f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
-  pauseMenu: {fileID: 20914318}
-  playerController: {fileID: 1562219794}
+--- !u!1001 &1441741233
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 55.39561
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -483.62363
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_Name
+      value: building layout
+      objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_Name
+      value: pillar 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_Name
+      value: pillar 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1599826595754709761, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_Name
+      value: elevator location
+      objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_Name
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_Name
+      value: 'haunted hospital '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+      propertyPath: m_Name
+      value: straight pillar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
 --- !u!1 &1539701311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,7 +1670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7c8981882080b54987b47bbb48aa7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GuidePopUpManager
-  popup: {fileID: 1853666656}
 --- !u!4 &1546330636
 Transform:
   m_ObjectHideFlags: 0
@@ -1844,15 +1922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5637f442752e1d74c93221ed279c7848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FPController
-  moveSpeed: 6
-  gravity: -9.81
-  cameraTransform: {fileID: 1780056410}
-  lookSensitivity: 3
-  verticalLookLimit: 100
-  originalSpeed: 0
-  crouchSpeed: 3
-  originalHeight: 3
-  crouchHeight: 1.5
 --- !u!1 &1675458124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,63 +2268,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853666656}
   m_CullTransparentMesh: 1
---- !u!1001 &1888273389
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
-      propertyPath: m_Name
-      value: 'haunted hospital '
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9f1125db8e7452e47a6284ffcab0a12b, type: 3}
 --- !u!1 &1894894909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,4 +2407,4 @@ SceneRoots:
   - {fileID: 683258249}
   - {fileID: 1424893206}
   - {fileID: 1546330636}
-  - {fileID: 1888273389}
+  - {fileID: 1441741233}
