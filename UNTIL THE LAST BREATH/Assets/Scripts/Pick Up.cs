@@ -1,41 +1,61 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class PickUp : MonoBehaviour
 {
     private Rigidbody rb;
+    private Collider col;
+    private Transform originalParent;
+    private int originalLayer;
+    private bool isHeld;
 
-    void Awake()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        col = GetComponent<Collider>();
+        originalLayer = gameObject.layer;
     }
 
-    public void PickUpObject (Transform holdPoint)
+    public void PickUpObject(Transform holdPos, Collider playerCollider)
     {
-        rb.useGravity = false;
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
+        isHeld = true;
+        originalParent = transform.parent;
 
-        transform.SetParent(holdPoint);
-        transform.localPosition = Vector3.zero;
+        rb.isKinematic = true;
+        transform.parent = holdPos;
+
+        int holdLayer = LayerMask.NameToLayer("Hold");
+        if (holdLayer != -1) gameObject.layer = holdLayer;
+
+        if (playerCollider != null && col != null)
+            Physics.IgnoreCollision(col, playerCollider, true);
     }
 
-    public void Drop()
+    public void MoveToHoldPoint(Vector3 targetPos)
     {
-        rb.useGravity = true;
-        transform.SetParent(null);
+        if (!isHeld) return;
+        transform.position = targetPos;
     }
 
-    public void MoveToHoldPoint(Vector3 targetPosition)
+    public void Drop(Collider playerCollider)
     {
-        rb.MovePosition(targetPosition);
+        Release(playerCollider);
     }
 
-    public void Throw (Vector3 impulse)
+    public void Throw(Vector3 impulse, Collider playerCollider)
     {
-        transform.SetParent (null);
-        rb.useGravity = true;
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        rb.AddForce (impulse, ForceMode.Impulse);
+        Release(playerCollider);
+        rb.AddForce(impulse, ForceMode.VelocityChange);
+    }
+
+    private void Release(Collider playerCollider)
+    {
+        isHeld = false;
+        transform.parent = originalParent;
+        gameObject.layer = originalLayer;
+        rb.isKinematic = false;
+
+        if (playerCollider != null && col != null)
+            Physics.IgnoreCollision(col, playerCollider, false);
     }
 }
