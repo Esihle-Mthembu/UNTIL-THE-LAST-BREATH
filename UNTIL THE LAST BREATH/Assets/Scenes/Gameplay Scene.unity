@@ -3610,7 +3610,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ec1179175ec9b4c0c8faa41f6ee73a0a, type: 2}
+  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11204,10 +11204,14 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2100000, guid: a5fef8e8f920d422692b573b553f9c2b, type: 2}
 =======
   - {fileID: 2100000, guid: e79ed9157b4994e41a8ded6cddc85b4d, type: 2}
 >>>>>>> Main-dupe
+=======
+  - {fileID: 2100000, guid: 23e8542833e916e42a7149905782fccd, type: 2}
+>>>>>>> parent of 91c0911 (trial)
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
