@@ -1,79 +1,49 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-
-[RequireComponent(typeof(Collider))]
 public class DoorOpen : MonoBehaviour
 {
-    [Header("Rotation Settings")]
-    [Tooltip("How many degrees the door should open.")]
-    public float openAngle = 90f;
+    public float openForce = 100f;
+    public float range = 10f;
 
-    [Tooltip("How fast the door rotates (degrees per second).")]
-    public float openSpeed = 120f;
+    public GameObject door;
+    public bool isOpening = false;
 
-    [Header("Behaviour")]
-    [Tooltip("If true, the door can be closed again by touching it while open.")]
-    public bool toggleOnTouch = true;
+    public Camera fpsCam;
 
-    private Quaternion closedRotation;
-    private Quaternion targetRotation;
-    private bool isOpen = false;
-    private bool isMoving = false;
-
-    private void Start()
+    // Update is called once per frame
+    void Update()
     {
-        closedRotation = transform.rotation;
-        targetRotation = closedRotation;
+        // New Input System equivalent of Input.GetKeyDown("f")
+        if (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
+        {
+            Shoot();
+        }
     }
 
-    private void Update()
+    void Shoot()
     {
-        if (isMoving)
+        RaycastHit hit;
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            transform.rotation = Quaternion.RotateTowards(
-                transform.rotation,
-                targetRotation,
-                openSpeed * Time.deltaTime
-            );
+            Debug.Log(hit.transform.name);
 
-            if (Quaternion.Angle(transform.rotation, targetRotation) < 0.05f)
+            Trigger trigger = hit.transform.GetComponent<Trigger>();
+            if (trigger != null && !isOpening)
             {
-                transform.rotation = targetRotation;
-                isMoving = false;
+                StartCoroutine(OpenDoor());
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    IEnumerator OpenDoor()
     {
-        if (!other.CompareTag("Player")) return;
-
-        if (!isOpen)
-        {
-            OpenAwayFrom(other.transform);
-        }
-        else if (toggleOnTouch)
-        {
-            Close();
-        }
-    }
-
-    private void OpenAwayFrom(Transform playerTransform)
-    {
-        Vector3 directionToPlayer = playerTransform.position - transform.position;
-        Vector3 localDirection = transform.InverseTransformDirection(directionToPlayer);
-
-        float direction = (localDirection.z > 0f) ? -1f : 1f;
-
-        targetRotation = closedRotation * Quaternion.Euler(0f, openAngle * direction, 0f);
-        isOpen = true;
-        isMoving = true;
-    }
-
-    private void Close()
-    {
-        targetRotation = closedRotation;
-        isOpen = false;
-        isMoving = true;
+        isOpening = true;
+        door.GetComponent<Animator>().Play("DoorOpen");
+        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(5.0f);
+        door.GetComponent<Animator>().Play("New State");
+        isOpening = false;
     }
 }

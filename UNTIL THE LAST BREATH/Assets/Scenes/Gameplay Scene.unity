@@ -1764,6 +1764,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d0bfe159359f240a31844cdd9a7f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostAI
+<<<<<<< HEAD
+=======
+  player: {fileID: 1562219791}
+  detectionRange: 200
+  chaseSpeed: 10
+  turnSpeed: 5
+  stopDistance: 1.5
+  ghostHeight: 0.2
+  ghostSpeed: 1.5
+>>>>>>> Main-dupe
 --- !u!43 &440631375
 Mesh:
   m_ObjectHideFlags: 0
@@ -4078,6 +4088,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2065128743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &984053097
 GameObject:
   m_ObjectHideFlags: 0
@@ -4190,6 +4201,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984053097}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> Main-dupe
 --- !u!1 &994547427
 GameObject:
   m_ObjectHideFlags: 0
@@ -4224,9 +4237,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af0949079868204e92d687fcea53196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorOpen
-  openAngle: 90
-  openSpeed: 120
-  toggleOnTouch: 1
+  openForce: 100
+  range: 10
+  door: {fileID: 994547427}
+  isOpening: 0
+  fpsCam: {fileID: 1780056409}
 --- !u!114 &994547429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4349,8 +4364,13 @@ Transform:
   m_GameObject: {fileID: 994547427}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.74284494, z: -0, w: 0.6694636}
+<<<<<<< HEAD
   m_LocalPosition: {x: 272.82, y: 28.12, z: 224.82}
   m_LocalScale: {x: 0.12397868, y: 11.061384, z: 6.7116084}
+=======
+  m_LocalPosition: {x: 331.9, y: 21.4371, z: 199.3}
+  m_LocalScale: {x: 0.1700108, y: 11.061384, z: 6.7116084}
+>>>>>>> Main-dupe
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4730,7 +4750,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 761d8e1f988ed2345a28312145c79c6e, type: 2}
+  - {fileID: 2100000, guid: e79ed9157b4994e41a8ded6cddc85b4d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5329,7 +5349,11 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: 761d8e1f988ed2345a28312145c79c6e, type: 2}
+=======
+  - {fileID: 2100000, guid: e79ed9157b4994e41a8ded6cddc85b4d, type: 2}
+>>>>>>> Main-dupe
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5561,7 +5585,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 761d8e1f988ed2345a28312145c79c6e, type: 2}
+  - {fileID: 2100000, guid: e79ed9157b4994e41a8ded6cddc85b4d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6414,7 +6438,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 761d8e1f988ed2345a28312145c79c6e, type: 2}
+  - {fileID: 2100000, guid: e79ed9157b4994e41a8ded6cddc85b4d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7711,13 +7735,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FPController
   moveSpeed: 6
   gravity: -9.81
+  jumpHeight: 2
   cameraTransform: {fileID: 1780056410}
   lookSensitivity: 3
   verticalLookLimit: 100
+  sprintSpeed: 20
   originalSpeed: 0
   crouchSpeed: 3
   originalHeight: 3
   crouchHeight: 1.5
+<<<<<<< HEAD
 --- !u!43 &1626163934
 Mesh:
   m_ObjectHideFlags: 0
@@ -7896,6 +7923,15 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+=======
+  pickupRange: 10
+  holdPos: {fileID: 1802857290}
+  pickupMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  throwForce: 15
+  throwUpwardBoost: 4
+>>>>>>> Main-dupe
 --- !u!1 &1631282071
 GameObject:
   m_ObjectHideFlags: 0
@@ -8845,6 +8881,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802857289}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!1 &1845583297
 GameObject:
   m_ObjectHideFlags: 0
@@ -9069,6 +9106,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851786943}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> Main-dupe
 --- !u!1 &1853666656
 GameObject:
   m_ObjectHideFlags: 0
@@ -11164,7 +11203,11 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: a5fef8e8f920d422692b573b553f9c2b, type: 2}
+=======
+  - {fileID: 2100000, guid: e79ed9157b4994e41a8ded6cddc85b4d, type: 2}
+>>>>>>> Main-dupe
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11245,8 +11288,13 @@ Transform:
   m_GameObject: {fileID: 2065128737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 445.68, y: 22.6, z: 251.7256}
   m_LocalScale: {x: 0.5803041, y: 2.1982148, z: 0.64034194}
+=======
+  m_LocalPosition: {x: 629, y: 16, z: 228}
+  m_LocalScale: {x: 1, y: 2.1982148, z: 1}
+>>>>>>> Main-dupe
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1092647013}
@@ -11982,6 +12030,9 @@ SceneRoots:
   - {fileID: 2065128743}
   - {fileID: 2095269239}
   - {fileID: 994547434}
+<<<<<<< HEAD
   - {fileID: 229989164}
   - {fileID: 835867732}
   - {fileID: 2113497785}
+=======
+>>>>>>> Main-dupe
