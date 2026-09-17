@@ -996,6 +996,7 @@ MonoBehaviour:
       m_Action: Advance Dialogue
       m_Flags: 0
     m_Flags: 0
+  typingSpeed: 0.05
 --- !u!4 &1994368431
 Transform:
   m_ObjectHideFlags: 0
