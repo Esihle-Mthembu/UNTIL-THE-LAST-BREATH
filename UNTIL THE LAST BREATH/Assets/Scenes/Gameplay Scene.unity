@@ -1439,9 +1439,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GhostAI
   player: {fileID: 1562219791}
   detectionRange: 200
-  chaseSpeed: 10
+  chaseSpeed: 2
   turnSpeed: 5
-  stopDistance: 1.5
+  stopDistance: 5
   ghostHeight: 0.2
   ghostSpeed: 1.5
 --- !u!1 &344105518
