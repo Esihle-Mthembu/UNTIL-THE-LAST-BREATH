@@ -9,9 +9,9 @@ public class Ghost : MonoBehaviour
     public float detectionRange = 220f;   // how far away it starts chasing
 
     [Header("Movement")]
-    public float chaseSpeed = 4f;
+    public float chaseSpeed = 2f;
     public float turnSpeed = 5f;
-    public float stopDistance = 1.5f;
+    public float stopDistance = 5f;
 
     [Header("Floating ghost")]
     public float ghostHeight = 0.2f;
