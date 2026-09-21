@@ -12,7 +12,6 @@
                 "value": "{\"m_Value\":false}"
             },
             {
-<<<<<<< HEAD
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "ShapeComponent.ResetSettings",
                 "value": "{\"m_Value\":false}"
@@ -23,8 +22,6 @@
                 "value": "{\"m_Value\":true}"
             },
             {
-=======
->>>>>>> Tsakani
                 "type": "UnityEngine.ProBuilder.LogLevel, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "log.level",
                 "value": "{\"m_Value\":3}"

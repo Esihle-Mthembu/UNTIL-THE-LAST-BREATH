@@ -353,6 +353,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &27707214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1140,6 +1141,8 @@ MeshFilter:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &101568048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1280,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101568048}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &102779845
@@ -3356,6 +3360,8 @@ MeshFilter:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &333048926
 GameObject:
   m_ObjectHideFlags: 0
@@ -3471,6 +3477,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &333048931
 MonoBehaviour:
@@ -5409,6 +5416,8 @@ MeshFilter:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &591897537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5546,6 +5555,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591897537}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!4 &593054457 stripped
 Transform:
@@ -5853,6 +5863,8 @@ MeshFilter:
   m_Mesh: {fileID: -2477511411847689622, guid: 3cefa8a3d660dbb4fab4d36f2d83e827, type: 3}
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &602838377
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,6 +5998,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602838377}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &622602026
@@ -6279,6 +6292,8 @@ Mesh:
         m_IndexCount: 0
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &683258246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6358,6 +6373,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &691244022
 PrefabInstance:
@@ -7618,6 +7634,8 @@ MonoBehaviour:
   speed: 8
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &803551083
 GameObject:
   m_ObjectHideFlags: 0
@@ -7721,6 +7739,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &804550625
@@ -11995,6 +12014,8 @@ Transform:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1083539519
 GameObject:
   m_ObjectHideFlags: 0
@@ -12132,6 +12153,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083539519}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1084155600
@@ -13079,6 +13101,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1130858829
 GameObject:
   m_ObjectHideFlags: 0
@@ -13212,6 +13236,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130858829}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1148695482
@@ -13908,6 +13933,8 @@ Transform:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1198595579
 GameObject:
   m_ObjectHideFlags: 0
@@ -14041,6 +14068,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198595579}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1227482681
@@ -15102,6 +15130,8 @@ Transform:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1335258451
 GameObject:
   m_ObjectHideFlags: 0
@@ -15239,6 +15269,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335258451}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1342068721
@@ -15983,6 +16014,8 @@ MeshFilter:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1424893205
 GameObject:
   m_ObjectHideFlags: 0
@@ -16033,6 +16066,7 @@ MonoBehaviour:
 --- !u!1 &1428139045
 GameObject:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 4bf7b9dd7417ca34da7a5541703a7fcc, type: 3}
   m_PrefabInstance: {fileID: 1575260905}
@@ -18240,6 +18274,8 @@ Transform:
 =======
 >>>>>>> Tsakani
 =======
+=======
+>>>>>>> parent of c22bcfe (updated building)
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
@@ -18318,6 +18354,9 @@ Transform:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of c22bcfe (updated building)
+=======
 >>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1539701311
 GameObject:
@@ -18413,6 +18452,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1552601391
 GameObject:
@@ -18872,6 +18912,8 @@ Light:
   m_EnableSpotReflector: 1
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1562219787
 GameObject:
   m_ObjectHideFlags: 0
@@ -19181,6 +19223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a67da7555baaa459896284ccec1cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FPController
+<<<<<<< HEAD
 <<<<<<< HEAD
   moveSpeed: 6
   gravity: -9.81
@@ -19978,6 +20021,8 @@ MeshFilter:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1675458124
 GameObject:
   m_ObjectHideFlags: 0
@@ -20111,6 +20156,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675458124}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1687903525
@@ -20873,6 +20919,8 @@ MeshFilter:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1780056407
 GameObject:
   m_ObjectHideFlags: 0
@@ -21010,6 +21058,7 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1781719426 stripped
@@ -22070,6 +22119,8 @@ Transform:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1853666656
 GameObject:
   m_ObjectHideFlags: 0
@@ -22146,6 +22197,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853666656}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1863913425
@@ -22232,10 +22284,33 @@ Mesh:
 =======
 --- !u!1 &1894894909
 GameObject:
+=======
+--- !u!1 &1894894909
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1894894911}
+  - component: {fileID: 1894894910}
+  - component: {fileID: 1894894912}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1894894910
+Light:
+>>>>>>> parent of c22bcfe (updated building)
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1894894911}
@@ -23222,6 +23297,9 @@ Light:
 =======
   m_GameObject: {fileID: 1894894909}
 >>>>>>> parent of c22bcfe (updated building)
+=======
+  m_GameObject: {fileID: 1894894909}
+>>>>>>> parent of c22bcfe (updated building)
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 1
@@ -23288,6 +23366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894894909}
   serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.1, y: 5.77, z: 219.48}
@@ -25347,6 +25426,10 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
 >>>>>>> parent of c22bcfe (updated building)
+=======
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+>>>>>>> parent of c22bcfe (updated building)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25358,6 +25441,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 2078935850}
   m_Enabled: 1
@@ -25379,6 +25463,9 @@ MonoBehaviour:
 =======
   m_GameObject: {fileID: 1926000641}
 >>>>>>> Tsakani
+=======
+  m_GameObject: {fileID: 1894894909}
+>>>>>>> parent of c22bcfe (updated building)
 =======
   m_GameObject: {fileID: 1894894909}
 >>>>>>> parent of c22bcfe (updated building)
@@ -25405,6 +25492,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!108 &2078935854
 Light:
@@ -28673,6 +28761,8 @@ Mesh:
 >>>>>>> Tsakani
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -28686,6 +28776,7 @@ SceneRoots:
   - {fileID: 683258249}
   - {fileID: 1424893206}
   - {fileID: 1546330636}
+<<<<<<< HEAD
 <<<<<<< HEAD
   - {fileID: 2065128743}
 <<<<<<< HEAD
@@ -28719,6 +28810,9 @@ SceneRoots:
 =======
 >>>>>>> Main-dupe
 >>>>>>> Tsakani
+=======
+  - {fileID: 1441741233}
+>>>>>>> parent of c22bcfe (updated building)
 =======
   - {fileID: 1441741233}
 >>>>>>> parent of c22bcfe (updated building)
