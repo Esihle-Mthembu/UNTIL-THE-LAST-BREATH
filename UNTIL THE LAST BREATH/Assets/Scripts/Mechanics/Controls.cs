@@ -343,6 +343,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+<<<<<<< HEAD:UNTIL THE LAST BREATH/Assets/Scripts/Mechanics/Controls.cs
                 }
             ]
         },
@@ -371,6 +372,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Advance Dialogue"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+=======
+>>>>>>> Tsakani:UNTIL THE LAST BREATH/Assets/Scripts/Controls.cs
                 }
             ]
         }
@@ -403,9 +406,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Player_Crouch = m_Player.FindAction("Crouch", throwIfNotFound: true);
         m_Player_Pickup = m_Player.FindAction("Pick up", throwIfNotFound: true);
         m_Player_Throw = m_Player.FindAction("Throw", throwIfNotFound: true);
+<<<<<<< HEAD:UNTIL THE LAST BREATH/Assets/Scripts/Mechanics/Controls.cs
         // Dialogue
         m_Dialogue = asset.FindActionMap("Dialogue", throwIfNotFound: true);
         m_Dialogue_AdvanceDialogue = m_Dialogue.FindAction("Advance Dialogue", throwIfNotFound: true);
+=======
+>>>>>>> Tsakani:UNTIL THE LAST BREATH/Assets/Scripts/Controls.cs
     }
 
     ~@Controls()
@@ -645,15 +651,24 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="PlayerActions" /> instance referencing this action map.
     /// </summary>
     public PlayerActions @Player => new PlayerActions(this);
+<<<<<<< HEAD:UNTIL THE LAST BREATH/Assets/Scripts/Mechanics/Controls.cs
 
     // Dialogue
     private readonly InputActionMap m_Dialogue;
     private List<IDialogueActions> m_DialogueActionsCallbackInterfaces = new List<IDialogueActions>();
     private readonly InputAction m_Dialogue_AdvanceDialogue;
+=======
+    private int m_KeyboardmouseSchemeIndex = -1;
+>>>>>>> Tsakani:UNTIL THE LAST BREATH/Assets/Scripts/Controls.cs
     /// <summary>
     /// Provides access to input actions defined in input action map "Dialogue".
     /// </summary>
+<<<<<<< HEAD:UNTIL THE LAST BREATH/Assets/Scripts/Mechanics/Controls.cs
     public struct DialogueActions
+=======
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme KeyboardmouseScheme
+>>>>>>> Tsakani:UNTIL THE LAST BREATH/Assets/Scripts/Controls.cs
     {
         private @Controls m_Wrapper;
 
@@ -689,6 +704,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <seealso cref="DialogueActions" />
         public void AddCallbacks(IDialogueActions instance)
         {
+<<<<<<< HEAD:UNTIL THE LAST BREATH/Assets/Scripts/Mechanics/Controls.cs
             if (instance == null || m_Wrapper.m_DialogueActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_DialogueActionsCallbackInterfaces.Add(instance);
             @AdvanceDialogue.started += instance.OnAdvanceDialogue;
@@ -750,6 +766,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     {
         get
         {
+=======
+>>>>>>> Tsakani:UNTIL THE LAST BREATH/Assets/Scripts/Controls.cs
             if (m_KeyboardmouseSchemeIndex == -1) m_KeyboardmouseSchemeIndex = asset.FindControlSchemeIndex("Keyboard&mouse");
             return asset.controlSchemes[m_KeyboardmouseSchemeIndex];
         }
@@ -810,6 +828,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnThrow(InputAction.CallbackContext context);
+<<<<<<< HEAD:UNTIL THE LAST BREATH/Assets/Scripts/Mechanics/Controls.cs
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Dialogue" which allows adding and removing callbacks.
@@ -825,5 +844,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnAdvanceDialogue(InputAction.CallbackContext context);
+=======
+>>>>>>> Tsakani:UNTIL THE LAST BREATH/Assets/Scripts/Controls.cs
     }
 }

@@ -257,6 +257,7 @@
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
+<<<<<<< HEAD:UNTIL THE LAST BREATH/Assets/Scripts/Mechanics/Controls.inputactions
                 }
             ]
         },
@@ -285,6 +286,8 @@
                     "action": "Advance Dialogue",
                     "isComposite": false,
                     "isPartOfComposite": false
+=======
+>>>>>>> Tsakani:UNTIL THE LAST BREATH/Assets/Scripts/Controls.inputactions
                 }
             ]
         }
