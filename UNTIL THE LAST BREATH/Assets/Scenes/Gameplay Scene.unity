@@ -14,19 +14,19 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.068
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.0997389, g: 0.12254508, b: 0.2578616, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.27044016, g: 0.27044016, b: 0.27044016, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 92b3aa099ecb9483381c91aba9894aad, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 4e5df56ccaf80e74ea68c6a74839415d, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -351,7 +351,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20914318}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &72930777
 =======
@@ -1126,8 +1125,6 @@ MeshFilter:
   m_GameObject: {fileID: 71770370}
   m_Mesh: {fileID: 2212009239438826721, guid: 6adcad1be32658e4eb4dc6bd59561117, type: 3}
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &101568048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1262,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101568048}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!43 &105244709
 =======
@@ -3004,8 +3000,6 @@ MeshFilter:
   m_GameObject: {fileID: 328693569}
   m_Mesh: {fileID: 4493585093827132993, guid: b41e4b94e51c77141920670ce4311940, type: 3}
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &333048926
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,7 +3119,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!114 &333048931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5505,8 +5498,6 @@ MeshFilter:
   m_GameObject: {fileID: 538740867}
   m_Mesh: {fileID: -2477511411847689622, guid: 3cefa8a3d660dbb4fab4d36f2d83e827, type: 3}
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &591897537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5644,7 +5635,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591897537}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!4 &593054457 stripped
@@ -5959,8 +5949,6 @@ MeshFilter:
   m_GameObject: {fileID: 602078749}
   m_Mesh: {fileID: -2477511411847689622, guid: 3cefa8a3d660dbb4fab4d36f2d83e827, type: 3}
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &602838377
 GameObject:
   m_ObjectHideFlags: 0
@@ -6094,7 +6082,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602838377}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!43 &646086207
 =======
@@ -6385,8 +6372,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &683258246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6466,7 +6451,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &690808708
 =======
@@ -7775,8 +7759,6 @@ MonoBehaviour:
   maxIntensity: 60
   speed: 8
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &803551083
 GameObject:
   m_ObjectHideFlags: 0
@@ -7883,7 +7865,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!1 &804550625
@@ -11521,8 +11502,6 @@ CanvasRenderer:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1083539519
 GameObject:
   m_ObjectHideFlags: 0
@@ -11660,7 +11639,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083539519}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 --- !u!1001 &1084155600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12748,8 +12726,6 @@ Transform:
   m_Father: {fileID: 811994404}
 >>>>>>> main
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1130858829
 GameObject:
   m_ObjectHideFlags: 0
@@ -12883,7 +12859,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130858829}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!43 &1182657761
 Mesh:
@@ -13577,8 +13552,6 @@ Transform:
   m_Father: {fileID: 2139022769}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1198595579
 GameObject:
   m_ObjectHideFlags: 0
@@ -13712,7 +13685,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198595579}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!43 &1275162592
 Mesh:
@@ -14784,8 +14756,6 @@ Transform:
   m_Father: {fileID: 2139022769}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -356.881}
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1335258451
 GameObject:
   m_ObjectHideFlags: 0
@@ -14923,7 +14893,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335258451}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 --- !u!1001 &1342068721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15719,8 +15688,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8598e8d4bbcac024fa7d966182e3c77d, type: 3}
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1424893205
 GameObject:
   m_ObjectHideFlags: 0
@@ -15771,7 +15738,6 @@ MonoBehaviour:
 --- !u!1 &1432670567
 GameObject:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -17997,86 +17963,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 854198217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.559}
-=======
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 55.39561
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.00006
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -483.62363
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8391222552659086748, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_Name
-      value: building layout
-      objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_Name
-      value: pillar 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_Name
-      value: pillar 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_Name
-      value: elevator location
-      objectReference: {fileID: 0}
-    - target: {fileID: -516098083770646512, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_Name
-      value: floor
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_Name
-      value: 'haunted hospital '
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
-      propertyPath: m_Name
-      value: straight pillar
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1539701311
 GameObject:
   m_ObjectHideFlags: 0
@@ -18171,7 +18057,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1552601391
 GameObject:
   m_ObjectHideFlags: 0
@@ -18628,8 +18513,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1562219787
 GameObject:
   m_ObjectHideFlags: 0
@@ -18935,7 +18818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5637f442752e1d74c93221ed279c7848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FPController
-<<<<<<< HEAD
   moveSpeed: 6
   gravity: -9.81
 <<<<<<< HEAD
@@ -24533,8 +24415,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2065128743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1675458124
 GameObject:
   m_ObjectHideFlags: 0
@@ -24668,7 +24548,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675458124}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!1 &1687903525
@@ -25271,8 +25150,6 @@ Light:
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1780056407
 GameObject:
   m_ObjectHideFlags: 0
@@ -25309,8 +25186,8 @@ Camera:
   m_GameObject: {fileID: 1780056407}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.04857399, g: 0.049250826, b: 0.050314426, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -25411,7 +25288,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!1 &1781719426 stripped
@@ -26485,8 +26361,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 601246043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1853666656
 GameObject:
   m_ObjectHideFlags: 0
@@ -26563,31 +26437,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853666656}
   m_CullTransparentMesh: 1
---- !u!1 &1894894909
-GameObject:
+--- !u!1001 &1863913425
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 325.92773
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 26.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 221.37302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4292154010595695564, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 194.56082
+      objectReference: {fileID: 0}
+    - target: {fileID: -4292154010595695564, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100.73374
+      objectReference: {fileID: 0}
+    - target: {fileID: -4292154010595695564, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -133.4443
+      objectReference: {fileID: 0}
+    - target: {fileID: -4292154010595695564, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4292154010595695564, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 53.451
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+      propertyPath: m_Name
+      value: ceiling
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+    - {fileID: -7029948723529949830, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e63559bd4c6c854baf77a1dc815a5bd, type: 3}
+--- !u!43 &1878343213
+Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1894894911}
-  - component: {fileID: 1894894910}
-  - component: {fileID: 1894894912}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &1894894910
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_Name: pb_Mesh49230
   serializedVersion: 12
   m_SubMeshes:
@@ -27551,20 +27485,17 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927439925}
-=======
-  m_GameObject: {fileID: 1894894909}
->>>>>>> parent of c22bcfe (updated building)
   m_Enabled: 1
   serializedVersion: 12
-  m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 100
+  m_Range: 24.901264
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -27612,15 +27543,14 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!4 &1894894911
+--- !u!4 &1927439928
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894894909}
+  m_GameObject: {fileID: 1927439925}
   serializedVersion: 2
-<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.1, y: 5.77, z: 219.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -29653,22 +29583,34 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 20.830002, y: -1.8899994, z: -13.419998}
-=======
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
->>>>>>> parent of c22bcfe (updated building)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &1894894912
+  m_Father: {fileID: 811994404}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2078935852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894894909}
+  m_GameObject: {fileID: 2078935850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1160d433571334a830b4feec3977ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 2078935854}
+  minIntensity: 5
+  maxIntensity: 60
+  speed: 8
+--- !u!114 &2078935853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078935850}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
@@ -29691,7 +29633,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1913875165
 PrefabInstance:
@@ -33430,13 +33371,10 @@ Mesh:
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 3cefa8a3d660dbb4fab4d36f2d83e827, type: 3}
 >>>>>>> main
-=======
->>>>>>> parent of c22bcfe (updated building)
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1894894911}
   - {fileID: 1539701313}
   - {fileID: 690808709}
   - {fileID: 1562219791}
@@ -33449,7 +33387,6 @@ SceneRoots:
   - {fileID: 683258249}
   - {fileID: 1424893206}
   - {fileID: 1546330636}
-<<<<<<< HEAD
   - {fileID: 2065128743}
 <<<<<<< HEAD
   - {fileID: 2095269239}
@@ -33491,6 +33428,3 @@ SceneRoots:
   - {fileID: 1927439928}
   - {fileID: 449170555}
 >>>>>>> main
-=======
-  - {fileID: 1441741233}
->>>>>>> parent of c22bcfe (updated building)
