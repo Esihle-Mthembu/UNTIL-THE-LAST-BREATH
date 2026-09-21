@@ -353,6 +353,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &72930777
 =======
 --- !u!1001 &27707214
@@ -1128,6 +1129,8 @@ MeshFilter:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &101568048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1268,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101568048}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!43 &105244709
@@ -3006,6 +3010,8 @@ MeshFilter:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &333048926
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,6 +3131,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &333048931
 MonoBehaviour:
@@ -5507,6 +5514,8 @@ MeshFilter:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &591897537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5644,6 +5653,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591897537}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5961,6 +5971,8 @@ MeshFilter:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &602838377
 GameObject:
   m_ObjectHideFlags: 0
@@ -6094,6 +6106,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602838377}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!43 &646086207
@@ -6387,6 +6400,8 @@ Mesh:
         m_IndexCount: 0
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &683258246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6466,6 +6481,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &690808708
@@ -7777,6 +7793,8 @@ MonoBehaviour:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &803551083
 GameObject:
   m_ObjectHideFlags: 0
@@ -7883,6 +7901,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11523,6 +11542,8 @@ CanvasRenderer:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1083539519
 GameObject:
   m_ObjectHideFlags: 0
@@ -11660,6 +11681,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083539519}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1084155600
 PrefabInstance:
@@ -12750,6 +12772,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1130858829
 GameObject:
   m_ObjectHideFlags: 0
@@ -12883,6 +12907,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130858829}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!43 &1182657761
@@ -13579,6 +13604,8 @@ Transform:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1198595579
 GameObject:
   m_ObjectHideFlags: 0
@@ -13712,6 +13739,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198595579}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!43 &1275162592
@@ -14786,6 +14814,8 @@ Transform:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1335258451
 GameObject:
   m_ObjectHideFlags: 0
@@ -14923,6 +14953,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335258451}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1342068721
 PrefabInstance:
@@ -15721,6 +15752,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 8598e8d4bbcac024fa7d966182e3c77d, type: 3}
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1424893205
 GameObject:
   m_ObjectHideFlags: 0
@@ -15771,6 +15804,7 @@ MonoBehaviour:
 --- !u!1 &1432670567
 GameObject:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17998,6 +18032,8 @@ Transform:
   m_Father: {fileID: 854198217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.559}
 =======
+=======
+>>>>>>> parent of c22bcfe (updated building)
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
@@ -18076,6 +18112,9 @@ Transform:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 923d2dc5700b0e245942bcd06a609096, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of c22bcfe (updated building)
+=======
 >>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1539701311
 GameObject:
@@ -18171,6 +18210,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1552601391
 GameObject:
@@ -18630,6 +18670,8 @@ Light:
   m_EnableSpotReflector: 1
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1562219787
 GameObject:
   m_ObjectHideFlags: 0
@@ -18935,6 +18977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5637f442752e1d74c93221ed279c7848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FPController
+<<<<<<< HEAD
 <<<<<<< HEAD
   moveSpeed: 6
   gravity: -9.81
@@ -24535,6 +24578,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1675458124
 GameObject:
   m_ObjectHideFlags: 0
@@ -24668,6 +24713,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675458124}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -25273,6 +25319,8 @@ Light:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1780056407
 GameObject:
   m_ObjectHideFlags: 0
@@ -25411,6 +25459,7 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -26487,6 +26536,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1 &1853666656
 GameObject:
   m_ObjectHideFlags: 0
@@ -26565,10 +26616,32 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!1 &1894894909
 GameObject:
+<<<<<<< HEAD
+=======
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1894894911}
+  - component: {fileID: 1894894910}
+  - component: {fileID: 1894894912}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1894894910
+Light:
+>>>>>>> parent of c22bcfe (updated building)
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1894894911}
@@ -27554,6 +27627,9 @@ Light:
 =======
   m_GameObject: {fileID: 1894894909}
 >>>>>>> parent of c22bcfe (updated building)
+=======
+  m_GameObject: {fileID: 1894894909}
+>>>>>>> parent of c22bcfe (updated building)
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 1
@@ -27620,6 +27696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894894909}
   serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.1, y: 5.77, z: 219.48}
@@ -29657,6 +29734,10 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
 >>>>>>> parent of c22bcfe (updated building)
+=======
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+>>>>>>> parent of c22bcfe (updated building)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29691,6 +29772,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1913875165
@@ -33432,6 +33514,8 @@ Mesh:
 >>>>>>> main
 =======
 >>>>>>> parent of c22bcfe (updated building)
+=======
+>>>>>>> parent of c22bcfe (updated building)
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -33449,6 +33533,7 @@ SceneRoots:
   - {fileID: 683258249}
   - {fileID: 1424893206}
   - {fileID: 1546330636}
+<<<<<<< HEAD
 <<<<<<< HEAD
   - {fileID: 2065128743}
 <<<<<<< HEAD
@@ -33491,6 +33576,9 @@ SceneRoots:
   - {fileID: 1927439928}
   - {fileID: 449170555}
 >>>>>>> main
+=======
+  - {fileID: 1441741233}
+>>>>>>> parent of c22bcfe (updated building)
 =======
   - {fileID: 1441741233}
 >>>>>>> parent of c22bcfe (updated building)
