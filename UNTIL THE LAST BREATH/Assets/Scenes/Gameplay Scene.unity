@@ -487,7 +487,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 26792226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 34132218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 65679452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 96520809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -2064,6 +2064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 136425351}
   - component: {fileID: 136425352}
+  - component: {fileID: 136425353}
   m_Layer: 0
   m_Name: Inventory UI Controller
   m_TagString: Untagged
@@ -2098,8 +2099,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04c6d18152d2a342a261d7e2cd200a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryUI
+--- !u!114 &136425353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136425350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927cea4188c66624da7f1eb5cc8fbc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventorySystem.InventoryUI
   inventoryPanel: {fileID: 1097929644}
-  inventoryIconButton: {fileID: 917628216}
+  inventoryIconButton: {fileID: 0}
   closeButton: {fileID: 2075530905}
   slots:
   - {fileID: 1742610613}
@@ -2108,6 +2121,7 @@ MonoBehaviour:
   - {fileID: 2108364807}
   pauseGameWhileOpen: 0
   lockCursorWhileClosed: 1
+  shortcutKey: 9
 --- !u!43 &153024131
 Mesh:
   m_ObjectHideFlags: 0
@@ -4321,13 +4335,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 576303441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf6e0eab5c3f0d4c8663b0b05ae4932, type: 3}
+  m_Script: {fileID: 11500000, guid: 527d646c3539bda4eb51137a21b53e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventorySlotUI
   itemType: 0
-  iconImage: {fileID: 0}
-  countText: {fileID: 0}
-  showCountEvenIfMaxIsOne: 0
+  iconImage: {fileID: 1821077359}
+  countText: {fileID: 423208343}
+  showCountEvenIfMaxIsOne: 1
 --- !u!1 &591897537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5151,7 +5165,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 690808708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeb20f3bbbcdc714a9816ef3ac646a8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1141017bb3b01a54d9fdaac10c47a2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
   itemLimits:
@@ -6529,7 +6543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &917628215
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7695,7 +7709,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1035983004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -9254,7 +9268,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1129654099}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -9712,7 +9726,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1190691090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -11935,7 +11949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
   m_Actions: {fileID: -944628639613478452, guid: 7f24801da4c77bf4ea270bf9583b127b, type: 3}
   m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
+  m_UIInputModule: {fileID: 683258247}
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -12066,7 +12080,7 @@ MonoBehaviour:
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1780056409}
 --- !u!143 &1562219793
 CharacterController:
   m_ObjectHideFlags: 0
@@ -12727,7 +12741,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.009137286, g: 0.03773582, b: 0.009137286, a: 1}
+      maxColor: {r: 0.00047465652, g: 0.050314426, b: 0.00047465652, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -18056,13 +18070,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1742610611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf6e0eab5c3f0d4c8663b0b05ae4932, type: 3}
+  m_Script: {fileID: 11500000, guid: 527d646c3539bda4eb51137a21b53e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventorySlotUI
   itemType: 0
-  iconImage: {fileID: 0}
-  countText: {fileID: 0}
-  showCountEvenIfMaxIsOne: 0
+  iconImage: {fileID: 1352261068}
+  countText: {fileID: 72930779}
+  showCountEvenIfMaxIsOne: 1
 --- !u!1 &1758002068
 GameObject:
   m_ObjectHideFlags: 0
@@ -18154,7 +18168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1758002068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9b53d82e6a656643a4eafec7cbd3425, type: 3}
+  m_Script: {fileID: 11500000, guid: 62aeaf90166c3de4092f3f9caf2bd3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PinPadUI
   panelRoot: {fileID: 1758002068}
@@ -18163,7 +18177,7 @@ MonoBehaviour:
   pinLength: 4
   feedbackText: {fileID: 369890197}
   wrongPinResetDelay: 0.6
-  playerInputScript: {fileID: 0}
+  playerInputScript: {fileID: 1562219792}
   lockCursorWhileOpen: 0
 --- !u!1 &1777331597
 GameObject:
@@ -18307,7 +18321,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1777331597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -18466,7 +18480,6 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   interactRange: 3
   interactableLayer:
-    serializedVersion: 2
     m_Bits: 4294967295
   interactPromptUI: {fileID: 0}
 --- !u!1 &1802857289
@@ -19117,7 +19130,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -19160,7 +19173,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1860009661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e74291db15b91b9429212466f2b02157, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b8c209970090744a9234c4c0e0269f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleGridController
   sourceImage: {fileID: 0}
@@ -20450,7 +20463,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2036507704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983d265462210a34b84283eac0056509, type: 3}
+  m_Script: {fileID: 11500000, guid: 339b7d871fb4415428417848a3fb0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTileClick
   grid: {fileID: 1860009667}
@@ -20502,13 +20515,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2040264596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf6e0eab5c3f0d4c8663b0b05ae4932, type: 3}
+  m_Script: {fileID: 11500000, guid: 527d646c3539bda4eb51137a21b53e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventorySlotUI
   itemType: 0
-  iconImage: {fileID: 0}
-  countText: {fileID: 0}
-  showCountEvenIfMaxIsOne: 0
+  iconImage: {fileID: 1357107188}
+  countText: {fileID: 1567950419}
+  showCountEvenIfMaxIsOne: 1
 --- !u!1001 &2046402813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22606,13 +22619,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2108364805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf6e0eab5c3f0d4c8663b0b05ae4932, type: 3}
+  m_Script: {fileID: 11500000, guid: 527d646c3539bda4eb51137a21b53e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventorySlotUI
   itemType: 0
-  iconImage: {fileID: 0}
-  countText: {fileID: 0}
-  showCountEvenIfMaxIsOne: 0
+  iconImage: {fileID: 1094811520}
+  countText: {fileID: 864853877}
+  showCountEvenIfMaxIsOne: 1
 --- !u!1 &2121608342
 GameObject:
   m_ObjectHideFlags: 0
