@@ -2452,6 +2452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 136425351}
+  - component: {fileID: 136425352}
   - component: {fileID: 136425353}
   m_Layer: 0
   m_Name: Inventory UI Controller
@@ -2475,6 +2476,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 803551084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &136425352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136425350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04c6d18152d2a342a261d7e2cd200a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryUI
 --- !u!114 &136425353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2503,10 +2516,14 @@ MonoBehaviour:
   pauseGameWhileOpen: 0
   lockCursorWhileClosed: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   shortcutKey: 3
 =======
   shortcutKey: 9
 >>>>>>> parent of 0d615bb (building changes)
+=======
+  shortcutKey: 9
+>>>>>>> parent of 223d61a (Recovery 2)
 --- !u!43 &153024131
 Mesh:
   m_ObjectHideFlags: 0
@@ -4988,7 +5005,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_StartCorner: 1
+  m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 100, y: 100}
   m_Spacing: {x: 10, y: 25}
@@ -6930,6 +6947,7 @@ RectTransform:
   m_Children:
   - {fileID: 20914319}
   - {fileID: 1853666657}
+  - {fileID: 917628215}
   - {fileID: 1097929645}
   - {fileID: 136425351}
   - {fileID: 1758002069}
@@ -7784,6 +7802,7 @@ Mesh:
         m_IndexStart: 0
         m_IndexCount: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &903933649
 GameObject:
   m_ObjectHideFlags: 0
@@ -8015,6 +8034,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2065128743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 223d61a (Recovery 2)
 --- !u!1 &917628214
 GameObject:
   m_ObjectHideFlags: 0
@@ -8148,6 +8169,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 917628214}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &918469726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ffc4b6ba24b08a14883f0611f8d4c49c, type: 3}
@@ -8157,6 +8179,8 @@ Transform:
 >>>>>>> 223d61a45b17a0616fd4519bafb16d9ba05bfbf0
 =======
 >>>>>>> parent of 0d615bb (building changes)
+=======
+>>>>>>> parent of 223d61a (Recovery 2)
 --- !u!1001 &957634753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9674,13 +9698,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40.25
+  m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -13154,8 +13178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4bedd86af92354885be30545e581f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
-  pauseMenu: {fileID: 20914318}
-  playerController: {fileID: 1562219794}
 --- !u!1 &1432670567
 GameObject:
   m_ObjectHideFlags: 0
@@ -14485,8 +14507,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 21f87bfd-39b3-4c1a-a4cc-9fe9b1e6fd70
-    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/a,/Keyboard/s,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+    m_ActionId: c004a3b0-7b6b-40ce-9b7b-6587876c0d8e
+    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1562219794}
@@ -14501,7 +14523,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: ea38e6e7-d284-43d3-b42d-388100006215
+    m_ActionId: ee6d2112-5478-4749-a712-06ff06e037f3
     m_ActionName: 'Player/Look[/Mouse/delta]'
   - m_PersistentCalls:
       m_Calls:
@@ -14517,7 +14539,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 551afc41-c6ce-41e4-bb40-e5faa970585c
+    m_ActionId: f9651a10-3d47-46e8-8836-7bc9842ba029
     m_ActionName: 'Player/Sprint[/Keyboard/shift]'
   - m_PersistentCalls:
       m_Calls:
@@ -14533,7 +14555,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: d4138f02-e88b-4a57-b25f-57e3dba29161
+    m_ActionId: b2e765c8-b66b-450a-9de8-3463df2f2115
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls:
@@ -14549,7 +14571,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 1790e500-fa59-468b-bea3-00285b4c5ecb
+    m_ActionId: b27b4d5b-2bfe-4860-8f31-f5cc3f31ac5e
     m_ActionName: 'Player/Crouch[/Keyboard/c]'
   - m_PersistentCalls:
       m_Calls:
@@ -14565,7 +14587,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: ec35af48-78b3-44e4-ae0c-e427976fe0ea
+    m_ActionId: 2f5dca27-a225-4799-84fb-0ab8a369d9b1
     m_ActionName: 'Player/Pick up[/Keyboard/e,/Mouse/leftButton]'
   - m_PersistentCalls:
       m_Calls:
@@ -14581,7 +14603,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 92e62d23-cba0-4560-9d49-8e2484eabb1c
+    m_ActionId: 1f22dd7c-4e6f-4b2c-90a9-b9057799b87a
     m_ActionName: 'Player/Throw[/Keyboard/t]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
@@ -14635,10 +14657,14 @@ MonoBehaviour:
   jumpHeight: 2
   cameraTransform: {fileID: 1780056410}
 <<<<<<< HEAD
+<<<<<<< HEAD
   lookSensitivity: 15
 =======
   lookSensitivity: 3
 >>>>>>> parent of 0d615bb (building changes)
+=======
+  lookSensitivity: 3
+>>>>>>> parent of 223d61a (Recovery 2)
   verticalLookLimit: 100
   sprintSpeed: 20
   originalSpeed: 0
@@ -21371,16 +21397,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1780056407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2c8e3301f228a049b9117ed9123ea3f, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c200f7c95f327847be22fabfe7e5276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractable
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   playerCamera: {fileID: 1780056409}
+=======
+  playerCamera: {fileID: 0}
+>>>>>>> parent of 223d61a (Recovery 2)
   interactRange: 3
   interactableLayer:
-    serializedVersion: 2
     m_Bits: 4294967295
   interactPromptUI: {fileID: 0}
 >>>>>>> 223d61a45b17a0616fd4519bafb16d9ba05bfbf0
@@ -22199,11 +22228,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleGridController
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   sourceImage: {fileID: 2800000, guid: b57a1c73adc2f55469691c4bc5f3ea36, type: 3}
 =======
   sourceImage: {fileID: 0}
 >>>>>>> parent of 0d615bb (building changes)
+=======
+  sourceImage: {fileID: 0}
+>>>>>>> parent of 223d61a (Recovery 2)
   columns: 3
   rows: 3
   tileImages:
@@ -23238,7 +23271,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1994572681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 727116f06d4d175479baa72b668e806d, type: 3}
+  m_Script: {fileID: 11500000, guid: ed4547fa6f5f8064689dc3f95956eae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUp
 --- !u!1 &2000878539
@@ -23589,56 +23622,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.92929
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9295688
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.42128432
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.97
+      value: 41.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.17
+      value: 15.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 279.88
+      value: 287.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.2629784
+      value: 0.36381954
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0047226506
+      value: 0.13910303
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.96458983
+      value: -0.8987459
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.019661054
+      value: 0.2013493
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.031
+      value: 27.59
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -149.48
+      value: -137.572
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.115
+      value: -6.708
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b41e4b94e51c77141920670ce4311940, type: 3}
       propertyPath: m_Name
