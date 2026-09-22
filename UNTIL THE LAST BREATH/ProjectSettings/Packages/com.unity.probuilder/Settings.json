@@ -36,6 +36,7 @@
                 "value": "{\"m_Value\":false}"
             },
             {
+<<<<<<< HEAD
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "editor.autoUpdatePreview",
                 "value": "{\"m_Value\":false}"
@@ -79,6 +80,8 @@
 >>>>>>> 223d61a45b17a0616fd4519bafb16d9ba05bfbf0
 =======
 >>>>>>> parent of 0d615bb (building changes)
+=======
+>>>>>>> parent of 223d61a (Recovery 2)
                 "type": "UnityEngine.ProBuilder.LogLevel, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "log.level",
                 "value": "{\"m_Value\":3}"
@@ -108,6 +111,7 @@
                 "type": "UnityEngine.ProBuilder.RectSelectMode, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "editor.dragSelectRectMode",
                 "value": "{\"m_Value\":0}"
+<<<<<<< HEAD
             },
             {
                 "type": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -143,6 +147,8 @@
 >>>>>>> 223d61a45b17a0616fd4519bafb16d9ba05bfbf0
 =======
 >>>>>>> parent of 0d615bb (building changes)
+=======
+>>>>>>> parent of 223d61a (Recovery 2)
             }
         ]
     }
