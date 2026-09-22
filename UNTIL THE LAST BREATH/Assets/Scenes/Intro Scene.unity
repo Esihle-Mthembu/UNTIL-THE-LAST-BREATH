@@ -389,10 +389,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1002459713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67096d9ae58401b4ab046b649ac56b04, type: 3}
+  m_Script: {fileID: 11500000, guid: 178021528cfe12f4782aa667ce3e89bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenFader
-  fadeShader: {fileID: 4800000, guid: a5b7816abdfe40a4f98a1b201b86d9bd, type: 3}
+  fadeShader: {fileID: 0}
   fadeOutDuration: 1
   fadeInDuration: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1994368429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3614a3242d3720c46bbcd0c234817bce, type: 3}
+  m_Script: {fileID: 11500000, guid: 95afacfb6e2e811428ae161e3edd6d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   introDialogue: {fileID: 11400000, guid: 4ef0096b8ec80e04b887f38fc212e46c, type: 2}
@@ -1029,20 +1029,12 @@ MonoBehaviour:
   dialogueText: {fileID: 1208492666}
   advanceDialogue:
     m_Name: Advance Dialogue
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: c9524691-0b34-4ec1-abd6-07043fb8bfa9
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 54b6c181-db33-4623-b00f-f86989ff4241
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f77927ff-5da5-4498-bdde-d4d74ee469fe
-      m_Path: <Keyboard>/space
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Advance Dialogue
-      m_Flags: 0
+    m_SingletonActionBindings: []
     m_Flags: 0
   typingSpeed: 0.05
   nextSceneName: Gameplay Scene
